@@ -10,7 +10,22 @@ const ProductDetail = ({ params: { slug } }: { params: { slug: string } }) => {
   console.log('prod: ', product)
   return (
     <>
-      <div className='my-2'>
+      <div className='my-2 flex gap-3 items-center btn w-1/2 btn-secondary'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='1em'
+          height='1em'
+          viewBox='0 0 512 512'
+        >
+          <path
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth={48}
+            d='M244 400L100 256l144-144M120 256h292'
+          ></path>
+        </svg>
         <Link href='/'>Back to Products</Link>
       </div>
       <div className='grid md:grid-cols-4 md:gap-3'>
