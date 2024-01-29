@@ -14,7 +14,7 @@ const ProductItem = ({ product }: { product: Product }) => {
             width={300}
             height={300}
             className='object-cover h-64 w-full mt-4 rounded'
-          ></Image>
+          />
         </Link>
       </figure>
       <div className='card-body'>
