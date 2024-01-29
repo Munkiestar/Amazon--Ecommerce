@@ -1,32 +1,33 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/header/Header";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/header/Header'
+import React from 'react'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Amazon Ecommerce Next App",
-  description: "Modern Ecommerce Next App",
-};
+  title: 'Amazon Ecommerce Next App',
+  description: 'Modern Ecommerce Next App',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
+        <div className='min-h-screen flex flex-col'>
           <Header />
           {children}
 
-          <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+          <footer className='footer footer-center p-4 bg-base-300 text-base-content'>
             Copyright @ 2023 - All rights reserved by Next Amazona
           </footer>
         </div>
       </body>
     </html>
-  );
+  )
 }
